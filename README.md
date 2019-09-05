@@ -11,4 +11,5 @@ This project is all about how to use a different tool to manage and maintain our
     1. Bring up the Oracle container
     2. Create a database for Flyway to manage
     3. Simulate ODS creation of DDL and DML
-    4. Bring down the database container.
+    4. Simulate a migration (add a new table, split data between the tables)
+    5. Bring down the database container.

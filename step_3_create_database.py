@@ -12,7 +12,7 @@ os.system('./flyway-4.2.0/flyway -configFile=./flyway-4.2.0/conf/flyway.csid.con
 os.system('figlet -w 160 -f slant "ODS"')
 #os.system('./flyway-4.2.0/flyway -configFile=./flyway-4.2.0/conf/flyway.ods.conf clean')
 os.system('./flyway-4.2.0/flyway -configFile=./flyway-4.2.0/conf/flyway.ods.conf info')
-os.system('./flyway-4.2.0/flyway -configFile=./flyway-4.2.0/conf/flyway.ods.conf migrate')
+os.system('./flyway-4.2.0/flyway -configFile=./flyway-4.2.0/conf/flyway.ods.conf migrate -target=2_2')
 os.system('./flyway-4.2.0/flyway -configFile=./flyway-4.2.0/conf/flyway.ods.conf info')
 
 os.system('figlet -w 160 -f slant "INCV"')

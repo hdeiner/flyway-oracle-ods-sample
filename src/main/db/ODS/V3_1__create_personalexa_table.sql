@@ -1,0 +1,31 @@
+CREATE TABLE ODS.PERSONALEXA
+(
+    PERSONID               NUMBER,
+    FIRSTNM                VARCHAR2(50 BYTE),
+    MIDDLEINITIAL          VARCHAR2(25 BYTE),
+    LASTNM                 VARCHAR2(40 BYTE),
+    SALUTATION             VARCHAR2(5 BYTE),
+    SUFFIX                 VARCHAR2(10 BYTE),
+    FULLNM                 VARCHAR2(200 BYTE),
+    GENDER                 VARCHAR2(24 BYTE),
+    SSN                    VARCHAR2(11 BYTE),
+    DTOFBIRTH              DATE,
+    ETHNICRACE             VARCHAR2(30 BYTE),
+    MARITALSTATUSMNEMONIC  VARCHAR2(24 BYTE),
+    EFFECTIVESTARTDT       DATE,
+    EFFECTIVEENDDT         DATE,
+    RECORDINSERTDT         TIMESTAMP(6)           DEFAULT systimestamp,
+    RECORDUPDTDT           TIMESTAMP(6)           DEFAULT systimestamp,
+    INSERTEDBY             VARCHAR2(30 BYTE)      DEFAULT USER,
+    UPDTDBY                VARCHAR2(30 BYTE)      DEFAULT USER,
+    LAST4SSN               VARCHAR2(4 BYTE),
+    EXCLUSIONCODE          CHAR(2 BYTE),
+    MAIDENNM               VARCHAR2(100 BYTE),
+    TITLE                  VARCHAR2(20 BYTE),
+    PERSONTYPE             CHAR(1 BYTE),
+    SOURCEPERSONIDEXT      VARCHAR2(100 BYTE),
+    SOURCEPERSONIDOID      VARCHAR2(64 BYTE)
+)
+    RESULT_CACHE (MODE DEFAULT)
+;
+
